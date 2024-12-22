@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cat</title>
+        <style>
+            p {
+                font-family: Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .overall {
+                box-shadow: 0 0 3px rgb(65, 64, 64);
+                margin-top: 5px;
+            }
+            .pet1 {
+                width: 100%;
+                height: 200px; 
+                object-fit: cover;
+                margin-bottom: 12px;
+            }
+
+            .name {
+                font-size: 18px;
+                font-weight: bold;
+                margin-left: 8px;
+                margin-bottom: 5px;
+            }
+            .text {
+                margin-top: 5px;
+                color: rgb(114, 113, 113);
+                margin-bottom: 0;
+                margin-left: 8px;
+            }
+
+            .add-button {
+                background-color: rgb(27, 219, 155);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 16px;
+                padding-right: 16px;
+                margin-top: 7px;
+                font-size: 15px;
+                cursor: pointer;
+                margin-left: 8px;
+                margin-bottom: 8px;
+            }
+            .add-button:hover {
+                opacity: 0.7;
+            }
+
+            .pet-grid {
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+                column-gap: 16px;
+            }
+
+            .profile-picture {
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+            }
+
+            .profile-container {
+                display: grid;
+                grid-template-columns: 35px 1fr;
+                align-items: center; 
+                margin-left: 8px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="pet-grid">
+            <div class="overall">
+                <img class="pet1" src="cat1.webp">
+                <p class="name">Oliver</p>
+                <div class="profile-container">
+                    <img class="profile-picture" src="images.jfif">
+                    <p class="text">2 mutual friends</p>
+                </div>
+                <button class="add-button">Add Friend</button>
+            </div>
+    
+            <div class="overall">
+                <img class="pet1" src="cat2.webp">
+                <p class="name">Mimi</p>
+                <div class="profile-container">
+                    <img class="profile-picture" src="images.jfif">
+                    <p class="text ">3 mutual friends</p>
+                </div>
+                <button class="add-button">Add Friend</button>
+            </div>
+    
+            <div class="overall">
+                <img class="pet1" src="dog1.webp">
+                <p class="name">Rex</p>
+                <div class="profile-container">
+                    <img class="profile-picture" src="images.jfif">
+                    <p class="text ">4 mutual friends</p>
+                </div>
+                <button class="add-button">Add Friend</button>
+            </div>
+        </div>
+    </body>
+</html>

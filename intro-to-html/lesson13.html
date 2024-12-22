@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box1 {
+                display: flex;
+                height: 50px;
+                margin-bottom: 30px;
+            }
+            .left {
+                width: 100px;
+                background-color: lightpink;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .item1 {
+                background-color: black;
+                color: white;
+
+            }
+            .right {
+                background-color: lightblue;
+                width: 200px;
+            }
+
+            .row2 {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                width: 200px;
+            }
+            .item2 {
+                color: white;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <div class="left">
+                <p class="item1">item</p>
+            </div>
+            <div class="right"></div>
+        </div>
+
+        <div class="box1">
+            <div class="left">
+            </div>
+            <div class="right">
+                <div>row1</div>
+                <div class="row2">
+                    <div class="item2">row2</div>
+                    <div class="item2">row2</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

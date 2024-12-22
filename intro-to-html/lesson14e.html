@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .body {
+                height: 30000px;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: fixed;
+                left: 0;
+                right: 0;
+                top: 0;
+                border-bottom-width: 1px;
+                border-bottom-color: rgb(131, 124, 124);
+                border-bottom-style: solid;
+                height: 50px;
+                
+            }
+            .profile {
+                width: 40px;
+                height: 40px;
+                border-radius: 25px;
+            }
+
+            .left-area {
+                display: flex;
+                align-items: center;
+                margin-left: 50px;
+            }
+            .name {
+                font-weight: bold;
+                flex: 1;
+                margin-left: 10px;
+            }
+
+            .right-area {
+                display: flex;
+                align-items: center;
+                margin-right: 50px;
+            }
+            .add {
+                background-color: rgb(32, 109, 216);
+                color: white;
+                padding: 5px;
+                margin-right: 5px;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .message {
+                background-color: rgb(197, 197, 197);
+                padding: 5px;
+                margin-right: 5px;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .sidebar1 {
+                position: fixed;
+                background-color: rgb(36, 36, 36);
+                width: 60px;
+                top: 50px;
+                bottom: 0;
+                left: 0;
+            }
+            .picture {
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+
+            .sidebar2 {
+                position: fixed;
+                background-color: rgb(63, 63, 63);
+                color: white;
+                width: 150px;
+                top: 50px;
+                bottom: 0;
+                left: 60px;
+                display: flex;
+                flex-direction: column;
+                padding-top: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .front {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .catalog {
+                margin-bottom: 16px;
+                color: rgb(166, 165, 165);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-area">
+                <div>
+                    <img class="profile" src="cat1.webp">
+                </div>
+                <div class="name">
+                    Oliver cat
+                </div>
+            </div>
+
+            <div class="right-area">
+                <button class="add">Add Friend</button>
+                <button class="message">Message</button>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="sidebar1">
+                <img class="picture" src="cat1.webp">
+                <img class="picture" src="cat2.webp">
+                <img class="picture" src="dog1.webp">
+            </div>
+            <div class="sidebar2">
+                <div class="front">
+                    <div class="info">INFO</div>
+                    <div class="plus">+</div>
+                </div>
+                <div class="catalog"># new-video</div>
+                <div class="catalog"># updates</div>
+                <div class="catalog"># faq</div>
+            </div>
+        </div>
+    </body>
+</html>
